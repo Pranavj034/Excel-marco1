@@ -1,0 +1,13 @@
+Sub AA()
+Dim A As Integer Dim
+B As Integer Dim C As
+Integer Dim D As
+Integer Dim result As
+Integer
+A = InputBox("enter number 1")B =
+InputBox("enter number 2")
+C = InputBox("enter number 3")D =
+InputBox("enter number 4")
+result = WorksheetFunction.Max(A, B, C, D)
+MsgBox "The maximum number is: " & result
+End Sub
