@@ -1,0 +1,33 @@
+M:
+Sub EstimateCashFlow() Dim ws
+As Worksheet Dim lastRow
+As Long Dim lastColumn As
+Long Dim startColumn As
+Long
+Dim totalInflows As Double Dim
+totalOutflows As DoubleDim
+netCashFlow As Double
+Set ws = ThisWorkbook.Sheets("Sheet1")
+lastRow = ws.Cells(ws.Rows.Count,
+"A").End(xlUp).Row lastColumn =
+ws.Cells(1, ws.Columns.Count).End(xlToLeft).Column
+startColumn = 2
+totalInflows = 0
+totalOutflows = 0
+For col = startColumn To lastColumn
+If ws.Cells(1, col).Value Like "Inflow*"
+Then totalInflows = totalInflows +
+WorksheetFunction.Sum(ws.Columns(col))
+ElseIf ws.Cells(1, col).Value Like "Outflow*" ThentotalOutflows
+= totalOutflows +
+WorksheetFunction.Sum(ws.Columns(col)) End If
+Next col
+netCashFlow = totalInflows - totalOutflows
+MsgBox "Total Inflows: " & totalInflows & vbCrLf &
+_
+"Total
+Outflows: " & totalOutflows & vbCrLf &
+_
+"Net Cash Flow: " & netCashFlow, vbInformation,
+"Cash FlowEstimation"
+End Sub
