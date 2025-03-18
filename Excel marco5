@@ -1,0 +1,12 @@
+Sub varandstd() Dim dataRange
+RangeDim
+variation As Double Dim
+stdDev As Double
+Set dataRange = Range("A2:A100")
+variation
+WorksheetFunction.Var(dataRange)
+As
+=
+stdDev = WorksheetFunction.StDev(dataRange)
+MsgBox "Variation: " & variation & vbCrLf & "Standard Deviation: " &stdDev End
+Sub
