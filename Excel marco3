@@ -1,0 +1,9 @@
+Function AreaSquare(Side As Double) As Double
+AreaSquare = Side * Side
+End Function
+Function AreaRectangle(length As Double, breadth As Double) As DoubleAreaRectangle = length *
+breadth
+End Function
+Function AreaCircle(Side As Double) As Double
+AreaCircle = 3.14 * Side * Side
+End Function
