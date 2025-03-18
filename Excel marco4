@@ -1,0 +1,38 @@
+Private Sub CommandButton1
+_
+Click()
+If (1 = 1) And (0 = 0) Then
+MsgBox "AND evaluated to TRUE"
+, vbOKOnly,
+Else
+MsgBox "AND evaluated to FALSE"
+, vbOKOnly,
+End If
+End Sub
+"AND operator"
+"AND operator"
+Private Sub CommandButton2
+_
+Click()
+If (1 = 1) Or (5 = 0) Then
+MsgBox "OR evaluated to TRUE"
+, vbOKOnly,
+Else
+MsgBox "OR evaluated to FALSE"
+, vbOKOnly,
+End If
+End Sub
+"OR operator"
+"OR operator"
+Private Sub CommandButton3
+_
+Click()
+If Not (0 = 0) Then
+MsgBox "NOT evaluated to TRUE"
+, vbOKOnly,
+Else
+MsgBox "NOT evaluated to FALSE"
+, vbOKOnly,
+End If
+"NOT operator"
+"NOT operator
